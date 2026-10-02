@@ -1,0 +1,16 @@
+File,Years Ahead,Split,Rows,Bankrupt,Values Filled,Missing Values Remaining
+1year.arff,5,train,4861,190,4098,0
+1year.arff,5,validation,1042,41,851,0
+1year.arff,5,test,1042,40,821,0
+2year.arff,4,train,7058,279,8241,0
+2year.arff,4,validation,1512,59,1926,0
+2year.arff,4,test,1513,60,1918,0
+3year.arff,3,train,7291,345,7017,0
+3year.arff,3,validation,1562,74,1437,0
+3year.arff,3,test,1563,74,1379,0
+4year.arff,2,train,6797,359,6146,0
+4year.arff,2,validation,1456,77,1286,0
+4year.arff,2,test,1457,77,1283,0
+5year.arff,1,train,4095,286,3159,0
+5year.arff,1,validation,877,61,659,0
+5year.arff,1,test,878,61,816,0
