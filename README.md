@@ -27,7 +27,7 @@ Bankrupt companies were analyzed from 2000-2012, companies that are still operat
 
 ### Preprocessing and transformations
 
-The original ARFF files are unmodified and arein `data/raw/`.
+The original ARFF files are unmodified and are in `data/raw/`.
 
 For this project, exact duplicate rows were removed while keeping the first occurrence. Each source file was split separately into approximately 70% training, 15% validation, and 15% test data using stratified sampling with seed 42. Missing feature values were filled with medians calculated from the corresponding training split only. The target column and observed feature values were not changed.
 
