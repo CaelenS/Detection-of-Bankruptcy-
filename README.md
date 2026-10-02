@@ -1,5 +1,5 @@
 # Detection-of-Bankruptcy-
-Machine learning project CSCI 2050U group 22
+Machine learning project CSCI 3052U group 22
 
 # Dataset Information:
 [Polish Companies Bankruptcy](https://archive.ics.uci.edu/dataset/365/polish+companies+bankruptcy+data),[DOI](10.24432/C5F600)
