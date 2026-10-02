@@ -29,22 +29,27 @@ Bankrupt companies were analyzed from 2000-2012, companies that are still operat
 
 The original ARFF files are unmodified and are in `data/raw/`.
 
-For this project, exact duplicate rows were removed while keeping the first occurrence. Each source file was split separately into approximately 70% training, 15% validation, and 15% test data using stratified sampling with seed 42. Missing feature values were filled with medians calculated from the corresponding training split only. The target column and observed feature values were not changed.
+For this project, exact duplicate rows were removed while keeping the first occurrence. Each source file was split separately into approximately 70% training, 15% validation, and 15% test data using stratified sampling with seed 42. Missing feature values were filled with medians calculated from the corresponding training split only. 
 
-No scaling, oversampling, undersampling, outlier removal, or feature engineering has been applied yet.
 
 ### Intended use
 
-This dataset will be used for a machine learning project. The goal is to predict bankruptcy from financial ratios and compare appropriate classification models.
+This dataset will be used for a machine learning project. The goal is to predict bankruptcy from financial ratios and compare classification models.
 
+### Primary success criterion
+
+The primary metric we will use for choosing the right model is **recall for the bankrupt class**. False negatives (missing a company that later goes bankrupt) should carry a greater penalty than a false positive (wrongly predicting bankruptcy for a company that remains non-bankrupt). Recall is a logical choice as the recall metric measures how many bankrupt companies the model correctly identifies.
+
+Because we don't want our model to just predict every company as bankrupt, the precision and F1 score will also be reported. Model choices will be made using the validation set, the test set will be reserved for final evaluation.
 ### Limitations and risks
 
-- Bankruptcy cases are rare comparted to non-bankruptcy cases.
+- Bankruptcy cases are rare compared to non-bankruptcy cases.
 - Some records contain missing feature values.
 - The dataset has no company identifier, thus company overlap across different horizons can not be analysed 
 - Our findings may not generalize beyond Polish companies, but we will attempt to explore this further if time permits. 
 
 **Source and license:** [UCI Machine Learning Repository - Polish Companies Bankruptcy](https://archive.ics.uci.edu/dataset/365/polish%2Bcompanies%2Bbankruptcy%2Bdata), licensed under CC BY 4.0.
+
 ## Data folders
 - `data/raw/`: original, unchanged ARFF datasets.
 - `data/cleaned/`: cleaned training, validation and test files, plus supporting records.
