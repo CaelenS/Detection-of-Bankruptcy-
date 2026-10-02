@@ -1,0 +1,29 @@
+{
+  "random_state": 42,
+  "proportions": [
+    0.7,
+    0.15,
+    0.15
+  ],
+  "raw_sha256": {
+    "1year.arff": "e1698d022a040369ab474fc234765edd75d3adc4392bad1d97c0d26a940f147b",
+    "2year.arff": "a5e0577ed6e36c43b5376af09c4a37249f8acf2128cea99f52ed119f7c417a88",
+    "3year.arff": "8d86b76eac8b8b878aefdb1ea41921b10f716ec3a398d6a775da13818dbc8737",
+    "4year.arff": "ae11434f0823d6208142ac5a4e83b4f3d7bcf4e827b330a798fdd6590bd9f5cb",
+    "5year.arff": "e403fd559a71f2614a19260a63af215b30c787f5a661b52798c4ac4e0c1271ca"
+  },
+  "versions": {
+    "pandas": "3.0.6",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1"
+  },
+  "prediction_horizon_years": {
+    "1year.arff": 5,
+    "2year.arff": 4,
+    "3year.arff": 3,
+    "4year.arff": 2,
+    "5year.arff": 1
+  },
+  "horizon_source": "https://archive.ics.uci.edu/dataset/365/polish+companies+bankruptcy+data"
+}
