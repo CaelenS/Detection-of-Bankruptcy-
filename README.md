@@ -53,6 +53,11 @@ This dataset will be used for a machine learning project. The goal is to predict
 The primary metric we will use for choosing the right model is **recall for the bankrupt class**. False negatives (missing a company that later goes bankrupt) should carry a greater penalty than a false positive (wrongly predicting bankruptcy for a company that remains non-bankrupt). Recall is a logical choice as the recall metric measures how many bankrupt companies the model correctly identifies.
 
 Because we don't want our model to just predict every company as bankrupt, the precision and F1 score will also be reported. Model choices will be made using the validation set, the test set will be reserved for final evaluation.
+
+### Feasibility and compute plan
+
+The dataset has 43,405 records and 64 input features. A dataset of this size is small enough to clean and analyze the data on most standard laptops. The project utilizes Python notebooks and typical libraries such as pandas, NumPy, SciPy, scikit-learn, Matplotlib, and Seaborn. We predict that no extra computing resources will be required. The existing train, validation, and test splits will be used for model development and evaluation.
+
 ### Limitations and risks
 
 - Bankruptcy cases are rare compared to non-bankruptcy cases.
