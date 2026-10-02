@@ -19,9 +19,21 @@ This dataset is licensed under a [Creative Commons Attribution 4.0 International
 - **Output:** `bankrupt`, where `0` means non-bankrupt and `1` means bankrupt.
 - **Prediction horizons:** The files predict bankruptcy from five years ahead (`1year.arff`) to one year ahead (`5year.arff`).
 
+### Sample input and output
+
+Each record contains 64 financial-ratio inputs. This example shows four inputs from one cleaned `1year` training record; the model will use all 64 features.
+
+```text
+net profit / total assets:               0.010502
+total liabilities / total assets:        0.531280
+working capital / total assets:          0.023791
+current assets / short-term liabilities: 1.051300
+
+bankrupt: 0 (non-bankrupt)
+```
 ### Provenance and collection
 
-The data was collected from the Emerging Markets Information Service (EMIS) and distributed through the UCI Machine Learning Repository. UCI lists Sebastian Tomczak as the dataset creator. The source documentation does not specify ownership of the underlying EMIS records, funding sources, or the detailed sampling and label-annotation process.
+The data was collected from the Emerging Markets Information Service (EMIS) and distributed through the UCI Machine Learning Repository. UCI lists Sebastian Tomczak as the dataset creator. The source documentation does not state the ownership of the underlying EMIS records, funding sources, or the detailed sampling and label-annotation process.
 
 Bankrupt companies were analyzed from 2000-2012, companies that are still operating were evaluated from 2007-2013.
 
