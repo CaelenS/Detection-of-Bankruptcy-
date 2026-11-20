@@ -1,0 +1,17 @@
+{
+  "generated_at_utc": "2026-11-20T22:06:04.588406+00:00",
+  "random_seed": 42,
+  "selection_metric": "pr_auc",
+  "bootstrap_samples": 1000,
+  "horizons": [
+    "1year",
+    "2year",
+    "3year",
+    "4year",
+    "5year"
+  ],
+  "python": "3.13.15 (tags/v3.13.15:4061bc4, Aug  5 2026, 13:05:39) [MSC v.1944 64 bit (AMD64)]",
+  "scikit_learn": "1.9.1",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "git_commit": "aa957e6498a95c747611563e6c1ef9d2dd151449"
+}
